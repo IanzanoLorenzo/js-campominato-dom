@@ -33,8 +33,8 @@ nav button{
 /* grid */
 
 #grid{
-    width: 700px;
-    height: 700px;
+    width: 40vw;
+    height: 40vw;
     margin: 20px auto;
     display: grid;
     gap: 10px;
@@ -54,4 +54,21 @@ nav button{
 .square.active{
     background-color: rgb(39, 39, 73);
     content: i+1;
+}
+
+.square.bomb{
+    background-color: rgb(165, 49, 49);
+}
+
+/* 
+tablet
+*/
+
+@media screen and (max-width: 768px) {
+    #grid{
+        width: 100vw;
+        height: 100vw;
+        gap: 5px;
+    }
+        
 }
